@@ -1,0 +1,9 @@
+Natural language data analysis agent, a data analysis assistant built for business users, supports uploading CSV files or connecting to databases, 
+allowing data queries, statistical analysis, and chart generation through natural language questions. The system converts user questions into SQL, 
+executes them in a read-only environment, and returns analysis conclusions, visual charts, query statements,
+and data references. It supports follow-up questions, exception alerts, and SQL security checks, helping users complete daily data analysis more quickly.
+
+
+自然语言数据分析 Agent，面向业务人员构建的数据分析助手，支持上传 CSV 或连接数据库，通过自然语言提问完成数据查询、
+统计分析与图表生成。系统将用户问题转换为 SQL，在只读环境中执行，并返回分析结论、可视化图表、查询语句和数据依据。
+支持连续追问、异常提示及 SQL 安全校验，帮助用户更快完成日常数据分析。
