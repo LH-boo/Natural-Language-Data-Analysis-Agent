@@ -3,6 +3,8 @@ import { ElMessage } from 'element-plus'
 
 export const API_BASE = '/api'
 
+const DEMO_MODE = import.meta.env.VITE_DEMO === 'true'
+
 const http = axios.create({
   baseURL: API_BASE,
   timeout: 180000
@@ -25,7 +27,7 @@ http.interceptors.response.use(
   (response) => response.data,
   (error) => {
     const message = resolveErrorMessage(error)
-    if (!error.config?.silent) {
+    if (!error.config?.silent && !DEMO_MODE) {
       ElMessage.error(message)
     }
     return Promise.reject(error)
